@@ -22,6 +22,7 @@ persist.cne.feature=1
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
 
 # Dex2oat
 ro.sys.fw.dex2oat_thread_count=8
