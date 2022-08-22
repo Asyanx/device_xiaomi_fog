@@ -116,6 +116,9 @@ ro.telephony.default_network=33,33
 ro.vendor.radio.features_common=3
 telephony.lteOnCdmaDevice=1
 
+# System
+persist.sys.binary_xml=false
+
 # Time-services
 persist.timed.enable=true
 
