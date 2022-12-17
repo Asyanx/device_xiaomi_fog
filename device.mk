@@ -341,6 +341,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigFog \
     DialerFog \
     FrameworksFog \
+    LineageSDKFog \
     SettingsFog \
     SettingsProviderFog \
     SystemUIFog \
