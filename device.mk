@@ -332,7 +332,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderFog \
     SystemUIFog \
     TelephonyFog \
-    WifiResCommon
+    WifiFog
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
