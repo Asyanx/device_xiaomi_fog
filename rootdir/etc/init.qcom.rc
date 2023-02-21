@@ -85,7 +85,8 @@ on early-boot
     write /sys/devices/virtual/npu/msm_npu/boot 1
     write /sys/devices/virtual/cvp/cvp/boot 1
 
-    write /sys/class/drm/card0-DSI-1/status "detect" write /sys/module/drm/parameters/vblankoffdelay -1
+    write /sys/class/drm/card0-DSI-1/status "detect"
+    write /sys/module/drm/parameters/vblankoffdelay -1
     chown system graphics /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
     chmod 0660 /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
 
