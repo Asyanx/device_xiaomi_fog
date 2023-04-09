@@ -78,9 +78,6 @@ TARGET_USES_GRALLOC4 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
-# DTBO image
-BOARD_KERNEL_SEPARATED_DTBO := true
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 
@@ -118,8 +115,10 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_TAGS_OFFSET        := 0x00000100
 
 BOARD_BOOT_HEADER_VERSION := 3
+BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+BOARD_MKBOOTIMG_ARGS += --dtb $(DEVICE_PATH)-kernel/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 
 BOARD_KERNEL_CMDLINE += \
     androidboot.fstab_suffix=qcom \
@@ -132,17 +131,7 @@ BOARD_KERNEL_CMDLINE += \
     service_locator.enable=1 \
     swiotlb=2048
 
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
-TARGET_KERNEL_HEADERS := kernel/xiaomi/fog
-TARGET_KERNEL_SOURCE := kernel/xiaomi/fog
 TARGET_KERNEL_VERSION := 4.19
-
-# Kernel prebuilt
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
 # Media
 TARGET_DISABLED_UBWC := true
