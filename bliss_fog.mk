@@ -14,6 +14,13 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 720
+
+# Maintainers
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.bliss.maintainer=Asyanx
+
 PRODUCT_NAME := bliss_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
