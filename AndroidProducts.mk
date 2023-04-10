@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_fog.mk
+    $(LOCAL_DIR)/hentai_fog.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_fog-user \
-    aosp_fog-userdebug \
-    aosp_fog-eng
+    hentai_fog-user \
+    hentai_fog-userdebug \
+    hentai_fog-eng
