@@ -16,8 +16,12 @@ $(call inherit-product, device/xiaomi/fog/device.mk)
 
 # Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# GMS
+TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_NAME := aosp_fog
 PRODUCT_DEVICE := fog
