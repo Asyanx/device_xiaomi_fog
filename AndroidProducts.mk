@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fog.mk
+    $(LOCAL_DIR)/stag_fog.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_fog-user \
-    lineage_fog-userdebug \
-    lineage_fog-eng
+    stag_fog-user \
+    stag_fog-userdebug \
+    stag_fog-eng
