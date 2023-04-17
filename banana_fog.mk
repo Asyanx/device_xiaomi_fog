@@ -9,12 +9,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/stag/main.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
-PRODUCT_NAME := stag_fog
+# Stuff banana
+BANANA_MAINTAINER := Asyanx
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := false
+
+# Gapps Stuff
+WITH_GAPPS := true
+BUILD_CORE_GAPPS := true
+
+PRODUCT_NAME := banana_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

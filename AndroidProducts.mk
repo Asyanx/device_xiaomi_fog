@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stag_fog.mk
+    $(LOCAL_DIR)/banana_fog.mk
 
 COMMON_LUNCH_CHOICES := \
-    stag_fog-user \
-    stag_fog-userdebug \
-    stag_fog-eng
+    banana_fog-user \
+    banana_fog-userdebug \
+    banana_fog-eng
