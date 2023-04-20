@@ -784,4 +784,7 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- QTI Boost Framework - AOSP Version -->
+    <bool name="config_supportsBoostFramework">true</bool>
 </resources>
