@@ -8,13 +8,31 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/stag/main.mk)
+# Inherit some common cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
-PRODUCT_NAME := stag_fog
+# CherishOS
+CHERISH_BUILD_TYPE=UNOFFICIAL
+
+# Maintainer
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Asyanx
+
+# Rom Specific Flags
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP  := false
+TARGET_GAPPS_ARCH := arm64
+TARGET_ENABLE_BLUR := false
+
+# Gapps
+WITH_GMS := true
+
+PRODUCT_NAME := cherish_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
