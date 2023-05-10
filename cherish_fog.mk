@@ -15,7 +15,7 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
 # CherishOS
-CHERISH_BUILD_TYPE=UNOFFICIAL
+CHERISH_BUILD_TYPE=OFFICIAL
 
 # Maintainer
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
