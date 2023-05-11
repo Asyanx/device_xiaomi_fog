@@ -442,7 +442,7 @@ DONT_DEXPREOPT_PREBUILTS := true
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
-    SystemUI
+    SystemUIGoogle
 
 # Update engine
 PRODUCT_PACKAGES += \
