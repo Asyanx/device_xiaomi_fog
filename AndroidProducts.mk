@@ -5,9 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stag_fog.mk
+    $(LOCAL_DIR)/bliss_fog.mk
 
 COMMON_LUNCH_CHOICES := \
-    stag_fog-user \
-    stag_fog-userdebug \
-    stag_fog-eng
+    bliss_fog-userdebug
