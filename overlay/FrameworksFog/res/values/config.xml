@@ -741,7 +741,7 @@
     <!-- Boost Framework -->
     <bool name="config_supportsBoostFramework">true</bool>
 
-   <!-- List of comma separated package names for which we the system will not show crash like
+    <!-- List of comma separated package names for which we the system will not show crash like
          tts, etc. dialogs. -->
     <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
 
@@ -763,4 +763,7 @@
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- Disable rounded corners on windows to improve graphics performance -->
+    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 </resources>
